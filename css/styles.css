@@ -1,0 +1,79 @@
+/* A5: відформатовано Prettier; C1: використовуємо класи; C2: без !important */
+margin: 0;
+padding: 0;
+}
+
+.card {
+    border: 1px solid var(--card-border);
+    background-color: #fff;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-meta {
+    padding: 32px 16px;
+    border-top: 1px solid var(--card-border);
+}
+
+.card-title {
+    color: var(--heading-color);
+    font-size: 20px;
+    /* C9 */
+    line-height: 1.2;
+    /* C10 */
+    letter-spacing: 0.02em;
+    margin: 0 0 8px;
+}
+
+.card-tag {
+    color: var(--text-color);
+    font-size: 16px;
+    /* C9 */
+    line-height: 1.5;
+    /* C10 */
+    margin: 0;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--heading-color);
+    color: #f4f4fd;
+    padding-block: 100px;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 264px;
+}
+
+.brand--inverse {
+    color: #f4f4fd;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+/* Адаптив під планшет/мобільний */
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
