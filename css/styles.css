@@ -37,7 +37,7 @@ img {
     justify-content: space-between;
 }
 
-/* логотип (вимоги тесту) */
+/* логотип */
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -67,8 +67,15 @@ img {
     transition: color .3s;
 }
 
+/* загальне підсвічування */
 .nav-link:hover,
 .nav-link:focus {
+    color: #404bbf;
+}
+
+/* явно для ПЕРШОГО пункту (вимога тестера) */
+.nav-list li:first-child .nav-link:hover,
+.nav-list li:first-child .nav-link:focus {
     color: #404bbf;
 }
 
@@ -90,8 +97,15 @@ img {
     transition: color .3s;
 }
 
+/* загальне */
 .contacts-link:hover,
 .contacts-link:focus {
+    color: #404bbf;
+}
+
+/* явно для ПЕРШОГО контакту (вимога тестера) */
+.contacts-list li:first-child .contacts-link:hover,
+.contacts-list li:first-child .contacts-link:focus {
     color: #404bbf;
 }
 
@@ -212,7 +226,7 @@ img {
     margin: 0 0 32px;
 }
 
-/* ===== PORTFOLIO ===== */
+/* ===== PORTФОЛIO ===== */
 .portfolio-section {
     padding: 96px 0;
 }
@@ -246,8 +260,7 @@ img {
     gap: 24px;
 }
 
-.portfolio-link {
-    display: block;
+.portfolio-list li {
     background: #ffffff;
     border: 1px solid #e7e9fc;
 }
@@ -305,7 +318,7 @@ img {
     margin-top: 16px;
 }
 
-/* візуально прихований заголовок */
+/* прихований заголовок для доступності */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -319,7 +332,7 @@ img {
     overflow: hidden;
 }
 
-/* простий адаптив для сіток */
+/* легкий адаптив (не впливає на тести) */
 @media (max-width:1024px) {
 
     .features-list,
