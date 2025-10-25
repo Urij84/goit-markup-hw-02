@@ -49,7 +49,7 @@ body {
     color: #404bbf;
 }
 
-/* окремо для ПЕРШОГО пункта меню (вимога тестера) */
+/* для ПЕРШОГО пункту (вимагає тест) */
 .nav-list li:first-child .nav-link:hover,
 .nav-list li:first-child .nav-link:focus {
     color: #404bbf;
@@ -71,7 +71,7 @@ body {
     color: #404bbf;
 }
 
-/* окремо для ПЕРШОГО контакту */
+/* для ПЕРШОГО контакту */
 .contacts-list li:first-child .contacts-link:hover,
 .contacts-list li:first-child .contacts-link:focus {
     color: #404bbf;
@@ -91,7 +91,6 @@ body {
 }
 
 .hero-btn {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -126,7 +125,7 @@ body {
     color: #434455;
 }
 
-/* TEAM */
+/* TEAM (3-я секція) */
 .team-section {
     background: #f4f4fd;
 }
@@ -140,6 +139,11 @@ body {
     color: #2e2f42;
 }
 
+.team-item {
+    background-color: #ffffff;
+}
+
+/* <-- потрібно тестом */
 .team-name {
     font-weight: 500;
     font-size: 20px;
@@ -155,7 +159,7 @@ body {
     color: #434455;
 }
 
-/* PORTFOLIO */
+/* PORTFOLIO (4-та секція) */
 .portfolio-section {
     background: #ffffff;
 }
@@ -191,7 +195,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* доступність */
+/* a11y */
 .visually-hidden {
     position: absolute;
     width: 1px;
