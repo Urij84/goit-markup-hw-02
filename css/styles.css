@@ -1,4 +1,3 @@
-/* базові */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -17,9 +16,8 @@ body {
     color: inherit;
 }
 
-/* HEADER */
 .page-header {
-    border-bottom: 1px solid #e7e9fc;
+    border: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -49,7 +47,6 @@ body {
     color: #404bbf;
 }
 
-/* для ПЕРШОГО пункту (вимагає тест) */
 .nav-list li:first-child .nav-link:hover,
 .nav-list li:first-child .nav-link:focus {
     color: #404bbf;
@@ -71,13 +68,11 @@ body {
     color: #404bbf;
 }
 
-/* для ПЕРШОГО контакту */
 .contacts-list li:first-child .contacts-link:hover,
 .contacts-list li:first-child .contacts-link:focus {
     color: #404bbf;
 }
 
-/* HERO */
 .hero-section {
     background: #2e2f42;
 }
@@ -105,7 +100,6 @@ body {
     background: #404bbf;
 }
 
-/* FEATURES */
 .features-section {
     background: #ffffff;
 }
@@ -125,7 +119,6 @@ body {
     color: #434455;
 }
 
-/* TEAM (3-я секція) */
 .team-section {
     background: #f4f4fd;
 }
@@ -143,7 +136,6 @@ body {
     background-color: #ffffff;
 }
 
-/* <-- потрібно тестом */
 .team-name {
     font-weight: 500;
     font-size: 20px;
@@ -159,7 +151,6 @@ body {
     color: #434455;
 }
 
-/* PORTFOLIO (4-та секція) */
 .portfolio-section {
     background: #ffffff;
 }
@@ -179,7 +170,6 @@ body {
     color: #434455;
 }
 
-/* FOOTER */
 .page-footer {
     background: #2e2f42;
 }
@@ -195,7 +185,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* a11y */
 .visually-hidden {
     position: absolute;
     width: 1px;
