@@ -344,4 +344,9 @@ footer p {
     #portfolio>ul:last-of-type {
         grid-template-columns: 1fr;
     }
+        main>section:nth-of-type(3) img {
+            width: 264px;
+            height: 260px;
+            object-fit: cover;
+        }
 }
