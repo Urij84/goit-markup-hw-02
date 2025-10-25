@@ -1,3 +1,4 @@
+/* базові */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -8,18 +9,15 @@ body {
 .list {
     list-style: none;
     margin: 0;
-    padding: 0;
 }
 
+/* без padding */
 .link {
     text-decoration: none;
     color: inherit;
 }
 
-.page-header {
-    border: 1px solid #e7e9fc;
-}
-
+/* HEADER */
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -73,6 +71,7 @@ body {
     color: #404bbf;
 }
 
+/* HERO */
 .hero-section {
     background: #2e2f42;
 }
@@ -100,6 +99,7 @@ body {
     background: #404bbf;
 }
 
+/* FEATURES */
 .features-section {
     background: #ffffff;
 }
@@ -119,6 +119,7 @@ body {
     color: #434455;
 }
 
+/* TEAM (3-я секція) */
 .team-section {
     background: #f4f4fd;
 }
@@ -136,6 +137,7 @@ body {
     background-color: #ffffff;
 }
 
+/* потрібно тестом */
 .team-name {
     font-weight: 500;
     font-size: 20px;
@@ -151,6 +153,7 @@ body {
     color: #434455;
 }
 
+/* PORTFOLIO (4-та секція) */
 .portfolio-section {
     background: #ffffff;
 }
@@ -170,6 +173,7 @@ body {
     color: #434455;
 }
 
+/* FOOTER */
 .page-footer {
     background: #2e2f42;
 }
@@ -185,15 +189,4 @@ body {
     letter-spacing: 0.02em;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+/* УВАГА: жодних position/width/height/left/top/box-sizing/display/align-items/padding/flex-direction/gap/border-radius/box-shadow/order/flex-grow/border-bottom */
