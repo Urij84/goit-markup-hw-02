@@ -7,19 +7,8 @@
     --border: #e7e9fc;
 }
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 body {
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Helvetica Neue",
-        Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     color: var(--text);
     background: #fff;
     font-size: 16px;
@@ -33,60 +22,37 @@ img {
     height: auto;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-/* умовний контейнер */
-header nav,
-header address,
-main>section,
-footer {
-    width: 100%;
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* ===== HEADER ===== */
+/* HEADER */
 header {
     border-bottom: 1px solid var(--border);
-    background: #fff;
+    background-color: #fff;
 }
 
 header nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 24px;
-    padding: 24px 0;
+    align-items: center;
+    padding: 24px;
 }
 
-header nav>a {
+header nav a {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
     color: var(--head);
+    text-decoration: none;
 }
 
 header nav ul {
     display: flex;
-    gap: 40px;
     list-style: none;
-    margin: 0;
+    gap: 40px;
     padding: 0;
 }
 
 header nav ul a {
-    font-weight: 500;
-    letter-spacing: 0.02em;
     color: var(--head);
-    transition: color 200ms;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 header nav ul a:hover,
@@ -94,52 +60,45 @@ header nav ul a:focus {
     color: var(--brand-hover);
 }
 
-header address ul {
+address ul {
     display: flex;
     gap: 40px;
     list-style: none;
-    margin: 0 0 24px 0;
     padding: 0;
 }
 
-header address a {
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    transition: color 200ms;
+address a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-header address a:hover,
-header address a:focus {
+address a:hover,
+address a:focus {
     color: var(--brand-hover);
 }
 
-/* ===== HERO ===== */
+/* HERO */
 main>section:first-of-type {
-    padding: 96px 0;
-    text-align: center;
     background: var(--head);
     color: #fff;
+    text-align: center;
+    padding: 120px 0;
 }
 
 main>section:first-of-type h1 {
-    margin: 0 0 24px 0;
     font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
+    line-height: 1.1;
 }
 
 main>section:first-of-type button {
     padding: 16px 32px;
-    border-radius: 4px;
-    border: none;
     background: var(--brand);
     color: #fff;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 200ms;
+    transition: background-color 0.3s;
 }
 
 main>section:first-of-type button:hover,
@@ -147,206 +106,82 @@ main>section:first-of-type button:focus {
     background: var(--brand-hover);
 }
 
-/* ===== FEATURES ===== */
+/* FEATURES */
 main>section:nth-of-type(2) {
     padding: 96px 0;
 }
 
-main>section:nth-of-type(2) h2 {
-    text-align: center;
-    margin: 0 0 72px 0;
-    color: var(--head);
-    font-size: 36px;
-    line-height: 1.11;
-}
-
 main>section:nth-of-type(2) ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+    list-style: none;
+    padding: 0;
 }
 
-main>section:nth-of-type(2) li h3 {
-    margin: 0 0 8px 0;
-    color: var(--head);
-    font-size: 20px;
-    line-height: 1.2;
-}
-
-main>section:nth-of-type(2) li p {
-    margin: 0;
-}
-
-/* ===== TEAM ===== */
+/* TEAM */
 main>section:nth-of-type(3) {
     padding: 96px 0;
     background: var(--muted);
 }
 
-main>section:nth-of-type(3) h2 {
-    text-align: center;
-    margin: 0 0 72px 0;
-    color: var(--head);
-    font-size: 36px;
-    line-height: 1.11;
-}
-
 main>section:nth-of-type(3) ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+    list-style: none;
+    padding: 0;
 }
 
-main>section:nth-of-type(3) li {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    overflow: hidden;
-    text-align: center;
+main>section:nth-of-type(3) img {
+    width: 264px;
+    height: 260px;
+    object-fit: cover;
 }
 
-main>section:nth-of-type(3) li h3 {
-    margin: 32px 0 8px 0;
-    color: var(--head);
-    font-size: 20px;
-    line-height: 1.2;
-}
-
-main>section:nth-of-type(3) li p {
-    margin: 0 0 32px 0;
-}
-
-/* ===== PORTFOLIO ===== */
+/* PORTFOLIO */
 #portfolio {
     padding: 96px 0;
 }
 
-#portfolio>h2 {
-    text-align: center;
-    margin: 0 0 72px 0;
-    color: var(--head);
-    font-size: 36px;
-    line-height: 1.11;
+#portfolio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* перший ul — фільтри */
 #portfolio>ul:first-of-type {
-    list-style: none;
-    margin: 0 0 72px 0;
-    padding: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 72px;
 }
 
 #portfolio>ul:first-of-type button {
     padding: 12px 24px;
-    border: 1px solid var(--border);
     background: var(--muted);
+    border: 1px solid var(--border);
     color: var(--brand);
     border-radius: 4px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
     cursor: pointer;
-    transition: background-color 200ms, color 200ms, border-color 200ms, box-shadow 200ms;
+    transition: all 0.3s;
 }
 
-#portfolio>ul:first-of-type button:hover,
-#portfolio>ul:first-of-type button:focus {
+#portfolio>ul:first-of-type button:hover {
     background: var(--brand-hover);
     color: #fff;
-    border-color: transparent;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 }
 
-/* другий ul — сітка карток */
-#portfolio>ul:last-of-type {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+#portfolio img {
+    width: 360px;
+    height: 300px;
+    object-fit: cover;
 }
 
-#portfolio>ul:last-of-type li {
-    border: 1px solid var(--border);
-    background: #fff;
-}
-
-#portfolio>ul:last-of-type li a {
-    display: block;
-}
-
-#portfolio>ul:last-of-type li h3 {
-    margin: 16px 16px 8px 16px;
-    color: var(--head);
-    font-size: 20px;
-    line-height: 1.2;
-}
-
-#portfolio>ul:last-of-type li p {
-    margin: 0 16px 16px 16px;
-}
-
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
     background: var(--head);
     color: #f4f4fd;
-    padding: 100px 15px;
-}
-
-footer>a {
-    display: inline-block;
-    margin-bottom: 16px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-}
-
-footer p {
-    max-width: 264px;
-    margin: 0;
-}
-
-/* ===== Адаптив ===== */
-@media (max-width: 1024px) {
-
-    main>section:nth-of-type(2) ul,
-    main>section:nth-of-type(3) ul,
-    #portfolio>ul:last-of-type {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 640px) {
-    header nav {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    header address ul {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    main>section:nth-of-type(2) ul,
-    main>section:nth-of-type(3) ul,
-    #portfolio>ul:last-of-type {
-        grid-template-columns: 1fr;
-    }
-        main>section:nth-of-type(3) img {
-            width: 264px;
-            height: 260px;
-            object-fit: cover;
-        }
+    padding: 100px 0;
+    text-align: left;
 }
